@@ -16,6 +16,7 @@ public class OrdemProduto extends javax.swing.JFrame {
      */
     public OrdemProduto() {
         initComponents();
+    
     }
 
     /**
@@ -108,22 +109,22 @@ public class OrdemProduto extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        double OP = Double.parseDouble(jTextField1.getText());
+        double jLabel2 = Double.parseDouble(jTextField1.getText());
         jButton1.setText("jTextField1");
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        double OP = Double.parseDouble(jTextField1.getText());
+        double jLabel2 = Double.parseDouble(jTextField1.getText());
         jButton2.setText("jTextField1");
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        double OP = Double.parseDouble(jTextField1.getText());
+        double jLabel2 = Double.parseDouble(jTextField1.getText());
         jButton3.setText("jTextField1");
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        double OP = Double.parseDouble(jTextField1.getText());
+        double jLabel2 = Double.parseDouble(jTextField1.getText());
         jButton4.setText("jTextField1");
     }//GEN-LAST:event_jButton4ActionPerformed
 
