@@ -3,13 +3,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 
-package codigodebarras.Inspecoes.op;
+package codigodebarras.Inspecoes;
 
 /**
  *
  * @author suporte
  */
 public class OrdemProduto extends javax.swing.JFrame {
+
 
     /** Creates new form OrdemProduto */
     public OrdemProduto() {
@@ -34,6 +35,11 @@ public class OrdemProduto extends javax.swing.JFrame {
         jLabel1.setText("op:");
 
         jButton1.setText("ok");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -65,6 +71,11 @@ public class OrdemProduto extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        setVisible(false);
+        new ChildFrame(this).setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -93,10 +104,8 @@ public class OrdemProduto extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new OrdemProduto().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new OrdemProduto().setVisible(true);
         });
     }
 
@@ -105,5 +114,15 @@ public class OrdemProduto extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
+
+    private static class ChildFrame {
+
+        public ChildFrame(OrdemProduto aThis) {
+        }
+
+        private void setVisible(boolean b) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+    }
 
 }

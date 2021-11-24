@@ -13,6 +13,8 @@ import javax.swing.table.DefaultTableModel;
  */
 public class Produto extends javax.swing.JFrame {
 
+    private Object jTextfield1;
+
     /**
      * Creates new form Produto
      */
@@ -367,18 +369,18 @@ public class Produto extends javax.swing.JFrame {
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
     private void jTextField10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField10ActionPerformed
-        String OrdemProduto = "insert into Produto"
+        String mysql = "insert into Produto"
                 + "values (?, ?, ?)";
     }//GEN-LAST:event_jTextField10ActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        String Mysql = "insert into Produto"
+        String mysql = "insert into Produto"
                 + "values (?, ?, ?)";
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
        DefaultTableModel dtmProdutos = (DefaultTableModel) jTable1.getModel();
-       dtmProdutos.addRow(new Object[] {jTextfield1.getText(),});
+       dtmProdutos.addRow(new Object[] {jTextfield1.getClass(),});
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
